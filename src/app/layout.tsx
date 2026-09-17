@@ -26,14 +26,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joaowehner.github.io/DraCindyHonda"),
-  title: "Dra. Cindy Honda | Dentista Especialista em Implantodontia e Prótese em Campo Grande - MS",
+  title: "Dra. Cindy Honda | Cirurgiã-Dentista em Campo Grande - MS",
   description:
-    "Consultório Odontológico Dra. Cindy Honda (CRO-MS 7657). Especialista em Implantodontia e Prótese Dentária pela UFMS. Reabilitação oral com cuidado humanizado no Carandá Bosque, Campo Grande/MS.",
+    "Consultório Odontológico Dra. Cindy Honda (CRO-MS 7657). Graduada em Odontologia pela UFMS. Reabilitação oral, próteses e implantes com atendimento individualizado no Carandá Bosque, Campo Grande/MS.",
   keywords: [
     "Dra Cindy Honda",
     "Cindy Tiemi Honda",
     "Dentista Campo Grande MS",
-    "Implantodontia Campo Grande",
+    "Cirurgiã-Dentista Campo Grande",
+    "Implantes Dentários Campo Grande",
     "Prótese Dentária Campo Grande MS",
     "Consultório Odontológico Carandá Bosque",
     "CRO MS 7657",
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     url: "https://joaowehner.github.io/DraCindyHonda",
     title: "Dra. Cindy Honda | Consultório Odontológico no Carandá Bosque, Campo Grande/MS",
     description:
-      "Cirurgiã-Dentista (CRO-MS 7657), Especialista em Implantodontia e Prótese Dentária. Atendimento de excelência, acolhedor e individualizado.",
+      "Cirurgiã-Dentista (CRO-MS 7657), graduada pela UFMS. Atendimento acolhedor e individualizado no Carandá Bosque, Campo Grande/MS.",
     siteName: "Consultório Odontológico Dra. Cindy Honda",
     images: [
       {
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dra. Cindy Honda | Cirurgiã-Dentista no Carandá Bosque",
     description:
-      "Especialista em Implantodontia e Prótese Dentária (CRO-MS 7657). Campo Grande/MS.",
+      "Cirurgiã-Dentista graduada pela UFMS (CRO-MS 7657). Atendimento com hora marcada em Campo Grande/MS.",
     images: ["https://joaowehner.github.io/DraCindyHonda/images/dra-cindy-honda-hero.jpg"],
   },
   robots: {
@@ -126,11 +127,7 @@ export default function RootLayout({
         closes: "18:00",
       },
     ],
-    medicalSpecialty: [
-      "Dentistry",
-      "Implantology",
-      "Prosthodontics",
-    ],
+    medicalSpecialty: ["Dentistry"],
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Universidade Federal de Mato Grosso do Sul (UFMS)",

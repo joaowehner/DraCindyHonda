@@ -30,9 +30,9 @@ export default function Hero() {
 
             {/* Clear, specific subtitle with verified credentials */}
             <p className="mt-4 sm:mt-6 text-base sm:text-xl text-espresso-600 font-normal leading-relaxed max-w-2xl">
-              Consultório odontológico focado em <strong className="font-semibold text-espresso-800">Implantodontia</strong> e{" "}
+              Consultório odontológico com atuação em <strong className="font-semibold text-espresso-800">Implantes</strong> e{" "}
               <strong className="font-semibold text-espresso-800">Prótese Dentária</strong>. Atendimento individualizado com a{" "}
-              <span className="text-espresso-900 font-medium">Dra. Cindy Honda</span>, cirurgiã-dentista graduada pela UFMS, no bairro Carandá Bosque.
+              <span className="text-espresso-900 font-medium">Dra. Cindy Honda</span>, cirurgiã-dentista graduada pela UFMS, no Carandá Bosque.
             </p>
 
             {/* Mobile-only featured portrait preview */}
@@ -71,7 +71,7 @@ export default function Hero() {
               </span>
               <span className="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-md bg-sand-100/90 text-espresso-800 border border-sand-200">
                 <Sparkles className="w-3.5 h-3.5 text-bronze-600" strokeWidth={1.75} />
-                Especialista em Implantes & Próteses
+                Graduada pela UFMS
               </span>
               <span className="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-md bg-sand-100/90 text-espresso-800 border border-sand-200">
                 <MapPin className="w-3.5 h-3.5 text-bronze-600" strokeWidth={1.75} />
@@ -88,14 +88,14 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2.5 bg-espresso-900 text-alabaster hover:bg-espresso-800 font-medium text-sm sm:text-base px-6 sm:px-7 py-3.5 rounded-full shadow-soft hover:shadow-elevated active:scale-[0.96] transition-transform duration-150 focus-visible:ring-2 focus-visible:ring-bronze-500"
               >
                 <MessageCircle className="w-5 h-5 text-emerald-400 shrink-0" strokeWidth={2} />
-                <span>Agendar Avaliação no WhatsApp</span>
+                <span>Agendar pelo WhatsApp</span>
               </a>
 
               <a
-                href="#especialidades"
+                href="#atendimentos"
                 className="inline-flex items-center justify-center gap-2 text-espresso-700 hover:text-espresso-950 font-medium text-sm sm:text-base px-6 py-3.5 rounded-full border border-sand-300 hover:border-espresso-400 bg-transparent hover:bg-sand-50 active:scale-[0.96] transition-transform duration-150"
               >
-                <span>Conhecer Tratamentos</span>
+                <span>Conhecer Atendimentos</span>
                 <ArrowRight className="w-4 h-4" strokeWidth={1.75} />
               </a>
             </div>
@@ -104,12 +104,10 @@ export default function Hero() {
             <div className="mt-7 sm:mt-8 pt-5 sm:pt-6 border-t border-sand-200/80 flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-4 text-xs text-espresso-500">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-                <span>Horários dedicados e pontualidade rigorosa</span>
+                <span>Atendimento com hora marcada</span>
               </div>
               <span className="hidden sm:inline text-sand-300">•</span>
-              <span>Ambiente privativo e acolhedor</span>
-              <span className="hidden sm:inline text-sand-300">•</span>
-              <span>Estacionamento facilitado no local</span>
+              <span>Ambiente acolhedor e privativo</span>
             </div>
 
           </div>
@@ -128,7 +126,7 @@ export default function Hero() {
               <div className="relative aspect-[3/4] w-full rounded-outer overflow-hidden shadow-elevated bg-sand-200 img-editorial">
                 <Image
                   src={assetPath("/images/dra-cindy-honda-hero.jpg")}
-                  alt="Dra. Cindy Honda, cirurgiã-dentista e especialista em Implantodontia e Prótese Dentária no consultório"
+                  alt="Dra. Cindy Honda, cirurgiã-dentista no consultório no Carandá Bosque"
                   fill
                   priority
                   sizes="(max-width: 1200px) 45vw, 540px"

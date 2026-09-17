@@ -1,32 +1,33 @@
 import React from "react";
-import { CLINIC_INFO } from "@/lib/constants";
-import { MapPin, Shield, Sparkles, UserCheck, CalendarCheck } from "lucide-react";
+import Image from "next/image";
+import { CLINIC_INFO, assetPath } from "@/lib/constants";
+import { Shield, UserCheck, CalendarCheck, MapPin } from "lucide-react";
 
 export default function Experience() {
-  const features = [
+  const points = [
     {
       icon: CalendarCheck,
-      title: "Pontualidade como respeito",
+      title: "Atendimento com hora marcada",
       description:
-        "Horários agendados com intervalo generoso. Você não espera horas na sala de espera: sua consulta começa no horário combinado.",
+        "Horários planejados com intervalo adequado para que sua consulta transcorra com calma e sem pressa.",
     },
     {
       icon: UserCheck,
-      title: "Atendimento exclusivo e direto",
+      title: "Acompanhamento direto",
       description:
-        "Todo o seu acompanhamento clínico é realizado pessoalmente pela Dra. Cindy, garantindo continuidade e vínculo de confiança.",
+        "Avaliação e condução do seu tratamento realizadas pessoalmente pela Dra. Cindy, com total continuidade.",
     },
     {
       icon: Shield,
-      title: "Biossegurança rigorosa",
+      title: "Cuidados com biossegurança",
       description:
-        "Esterilização hospitalar e descartáveis certificados, seguindo estritamente as diretrizes da ANVISA e do Conselho Federal de Odontologia.",
+        "Ambiente estruturado com normas de higiene, materiais esterilizados e protocolos de proteção à sua saúde.",
     },
     {
       icon: MapPin,
-      title: "Localização nobre e acessível",
+      title: "Espaço reservado no Carandá Bosque",
       description:
-        "Localizado no Carandá Bosque (Rua Vitório Zeola, 1516), com fácil estacionamento na porta e acesso tranquilo sem o trânsito pesado do centro.",
+        "Consultório discreto e acolhedor, planejado para que você se sinta seguro e confortável durante todo o atendimento.",
     },
   ];
 
@@ -37,66 +38,63 @@ export default function Experience() {
         {/* Section Header */}
         <div className="max-w-3xl">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-espresso-900 leading-tight">
-            Um consultório pensado para o seu conforto e tranquilidade.
+            Ambiente planejado para o seu conforto e tranquilidade.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-espresso-600 leading-relaxed font-normal">
-            Cada detalhe do nosso espaço foi desenhado para criar uma atmosfera relaxante, onde a visita ao dentista seja uma experiência agradável e segura.
+            Um espaço acolhedor e privativo no Carandá Bosque, pensado para tornar sua experiência odontológica serena e segura.
           </p>
         </div>
 
-        {/* 4 Cards Grid */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="p-7 rounded-outer bg-sand-50/80 border border-sand-200/80 shadow-subtle hover:shadow-soft transition-all duration-200 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="w-11 h-11 rounded-inner bg-sand-100 flex items-center justify-center text-bronze-600 mb-5">
-                    <Icon className="w-5 h-5" strokeWidth={1.75} />
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-espresso-900 leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-espresso-600 leading-relaxed font-normal">
-                    {item.description}
-                  </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-sand-200/60 text-xs font-semibold text-bronze-700 tracking-wider uppercase">
-                  Diferencial 0{idx + 1}
-                </div>
+        {/* Visual & Features Grid */}
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          {/* Main Clinic Image */}
+          <div className="lg:col-span-6 relative">
+            <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full rounded-outer overflow-hidden shadow-elevated bg-sand-200 img-editorial">
+              <Image
+                src={assetPath("/images/dra-cindy-honda-clinica.jpg")}
+                alt="Consultório odontológico da Dra. Cindy Honda no Carandá Bosque"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/60 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-alabaster">
+                <span className="block font-display text-base font-semibold">
+                  Consultório Dra. Cindy Honda
+                </span>
+                <span className="text-xs text-sand-200">
+                  Rua Vitório Zeola, 1516, Sala 02 • Carandá Bosque
+                </span>
               </div>
-            );
-          })}
-        </div>
-
-        {/* Location callout banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-outer bg-espresso-900 text-alabaster shadow-elevated flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div className="flex items-start sm:items-center gap-4">
-            <div className="w-12 h-12 rounded-inner bg-espresso-800 border border-espresso-700 flex items-center justify-center text-bronze-400 shrink-0">
-              <MapPin className="w-6 h-6" strokeWidth={1.5} />
-            </div>
-            <div>
-              <span className="block text-xs uppercase tracking-widest text-bronze-300 font-semibold">
-                Endereço do Consultório
-              </span>
-              <span className="block font-display text-lg sm:text-xl font-medium text-alabaster mt-0.5">
-                {CLINIC_INFO.address.full}
-              </span>
             </div>
           </div>
 
-          <a
-            href={CLINIC_INFO.address.googleMapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-bronze-500 hover:bg-bronze-400 text-espresso-950 font-semibold text-sm px-6 py-3 rounded-full active:scale-[0.96] transition-all shrink-0"
-          >
-            <span>Ver no Google Maps</span>
-          </a>
+          {/* Short Points */}
+          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {points.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="p-6 rounded-outer bg-sand-50/70 border border-sand-200/80 shadow-subtle flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="w-10 h-10 rounded-inner bg-sand-100 flex items-center justify-center text-bronze-600 mb-4">
+                      <Icon className="w-5 h-5" strokeWidth={1.75} />
+                    </div>
+                    <h3 className="font-display text-lg font-bold text-espresso-900 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-xs sm:text-sm text-espresso-600 leading-relaxed font-normal">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
         </div>
 
       </div>

@@ -7,80 +7,52 @@ export default function Treatments() {
     {
       id: "implantes",
       icon: Activity,
-      title: "Implantodontia & Reabilitação",
-      tag: "Especialidade",
+      title: "Implantes Dentários",
+      tag: "Reabilitação",
       description:
-        "Reposição cirúrgica de um ou mais dentes perdidos através de implantes dentários biocompatíveis. O tratamento visa restabelecer a estabilidade mastigatória, preservar a estrutura óssea e devolver a firmeza natural ao sorrir e mastigar.",
-      highlights: [
-        "Planejamento individualizado por especialista",
-        "Preservação da estrutura óssea remanescente",
-        "Conforto e segurança mastigatória semelhante aos dentes naturais",
-        "Opções para casos unitários ou reabilitações completas",
-      ],
-      whatsappMsg: "Ol%C3%A1%2C%20Dra.%20Cindy!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento%20com%20implantes%20dent%C3%A1rios.",
+        "Procedimentos voltados à reposição de dentes ausentes e à recuperação da função mastigatória, planejados conforme a necessidade e a saúde bucal de cada paciente.",
     },
     {
       id: "protese",
       icon: Layers,
-      title: "Prótese Dentária & Coroas",
-      tag: "Especialidade",
+      title: "Próteses Dentárias e Coroas",
+      tag: "Reabilitação",
       description:
-        "Restauração e reconstrução de dentes severamente desgastados ou fraturados, bem como próteses instaladas sobre implantes. Trabalhamos com materiais de alta resistência e translucidez, como zircônia e cerâmicas puras.",
-      highlights: [
-        "Coroas em cerâmica pura e zircônia livre de metal",
-        "Próteses fixas sobre implantes",
-        "Ajuste oclusal minucioso para equilíbrio articular",
-        "Acabamento personalizado para mimetizar dentes vizinhos",
-      ],
-      whatsappMsg: "Ol%C3%A1%2C%20Dra.%20Cindy!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20pr%C3%B3teses%20e%20coroas%20dent%C3%A1rias.",
+        "Recuperação funcional e estética de dentes desgastados, fraturados ou ausentes, com opções de próteses fixas, sobre implantes e restaurações indiretas.",
     },
     {
       id: "estetica",
       icon: Sparkles,
-      title: "Odontologia Estética & Facetas",
-      tag: "Tratamento",
+      title: "Odontologia Estética",
+      tag: "Estética Dental",
       description:
-        "Planejamento da forma, alinhamento e proporções dos dentes para um sorriso harmônico. Priorizamos técnicas de mínima intervenção e máxima conservação do esmalte dental biológico.",
-      highlights: [
-        "Facetas e lentes de contato em cerâmica",
-        "Planejamento guiado pela anatomia e traços faciais",
-        "Preservação criteriosa da estrutura dental natural",
-        "Texturização e brilho compatíveis com a idade do paciente",
-      ],
-      whatsappMsg: "Ol%C3%A1%2C%20Dra.%20Cindy!%20Gostaria%20de%20saber%20mais%20sobre%20facetas%20e%20est%C3%A9tica%20do%20sorriso.",
+        "Procedimentos como restaurações estéticas e clareamento dental que priorizam a harmonia do sorriso, respeitando a anatomia natural de cada pessoa.",
     },
     {
       id: "prevencao",
       icon: CheckCircle2,
-      title: "Clínica Geral, Clareamento & Prevenção",
-      tag: "Saúde & Manutenção",
+      title: "Clínica Geral e Prevenção",
+      tag: "Saúde & Prevenção",
       description:
-        "Cuidado continuado da saúde bucal, incluindo profilaxia profunda, diagnóstico de cáries incipientes, restaurações estéticas diretas em resina e clareamento dental supervisionado com proteção gengival.",
-      highlights: [
-        "Profilaxia e controle de saúde gengival e periodontal",
-        "Restaurações estéticas com selamento de alta precisão",
-        "Clareamento dental seguro sob supervisão clínica",
-        "Acompanhamento preventivo periódico",
-      ],
-      whatsappMsg: "Ol%C3%A1%2C%20Dra.%20Cindy!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o%20e%20limpeza%20preventiva.",
+        "Consultas de rotina, profilaxia (limpeza), diagnóstico precoce e orientações preventivas para manter dentes e gengivas saudáveis ao longo do tempo.",
     },
   ];
 
   return (
-    <section id="especialidades" className="py-20 lg:py-28 bg-alabaster">
+    <section id="atendimentos" className="py-20 lg:py-28 bg-alabaster">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-espresso-900 leading-tight">
-            Áreas de atuação e tratamentos especializados.
+            Áreas de atuação clínica.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-espresso-600 leading-relaxed font-normal">
-            Todos os procedimentos são conduzidos seguindo protocolos científicos atuais, com materiais biocompatíveis de referência internacional e foco permanente na saúde biológica.
+            Procedimentos odontológicos conduzidos com avaliação criteriosa, planejamento individualizado e foco na saúde e bem-estar de cada paciente.
           </p>
         </div>
 
-        {/* Services List / Cards with concentric styling and clear hierarchy */}
+        {/* Services List / Cards */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service) => {
             const Icon = service.icon;
@@ -106,33 +78,19 @@ export default function Treatments() {
                   <p className="mt-4 text-sm sm:text-base text-espresso-600 leading-relaxed font-normal">
                     {service.description}
                   </p>
-
-                  <div className="mt-6 pt-5 border-t border-sand-200/70">
-                    <span className="block text-xs font-semibold text-espresso-800 uppercase tracking-wider mb-3">
-                      Destaques do tratamento:
-                    </span>
-                    <ul className="space-y-2 text-xs sm:text-sm text-espresso-700">
-                      {service.highlights.map((h, i) => (
-                        <li key={i} className="flex items-start gap-2.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-bronze-500 mt-2 shrink-0" />
-                          <span>{h}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
 
                 <div className="mt-8 pt-5 border-t border-sand-200/80 flex items-center justify-between">
                   <span className="text-xs text-espresso-500">
-                    Atendimento no Carandá Bosque
+                    Atendimento com hora marcada
                   </span>
                   <a
-                    href={`https://wa.me/5567981210010?text=${service.whatsappMsg}`}
+                    href={CLINIC_INFO.contact.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-espresso-900 hover:text-bronze-600 active:scale-[0.96] transition-all"
                   >
-                    <span>Dúvidas sobre este tratamento</span>
+                    <span>Informações no WhatsApp</span>
                     <MessageCircle className="w-4 h-4 text-emerald-500" strokeWidth={2} />
                   </a>
                 </div>

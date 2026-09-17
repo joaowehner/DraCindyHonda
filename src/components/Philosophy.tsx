@@ -33,11 +33,11 @@ export default function Philosophy() {
             Odontologia pensada para quem valoriza serenidade e atenção aos detalhes.
           </h2>
           <p className="mt-5 text-base sm:text-lg text-espresso-600 leading-relaxed font-normal">
-            Longe do modelo impessoal de franquias e salas de espera lotadas, nosso consultório foi concebido como um espaço reservado de cuidado integral. Aqui, você é atendido diretamente pela especialista responsável pelo seu caso.
+            Atendimento odontológico individualizado com hora marcada. Cada caso é planejado com calma, priorizando sua saúde bucal, estética e bem-estar.
           </p>
         </div>
 
-        {/* 3 Pillars Grid with concentric radius and restrained borders */}
+        {/* Principles Grid with concentric radius and restrained borders */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
@@ -58,10 +58,6 @@ export default function Philosophy() {
                   <p className="mt-3.5 text-sm sm:text-base text-espresso-600 leading-relaxed font-normal">
                     {pillar.description}
                   </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-sand-100 flex items-center text-xs font-semibold text-bronze-700 tracking-wide uppercase">
-                  Pilar 0{idx + 1}
                 </div>
               </div>
             );

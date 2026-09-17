@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CLINIC_INFO, assetPath } from "@/lib/constants";
-import { GraduationCap, Award, Heart, CheckCircle } from "lucide-react";
+import { GraduationCap, CheckCircle, Heart } from "lucide-react";
 
 export default function About() {
   const credentials = [
@@ -9,19 +9,19 @@ export default function About() {
       icon: GraduationCap,
       title: "Graduação em Odontologia",
       institution: "Universidade Federal de Mato Grosso do Sul (UFMS)",
-      detail: "Formação sólida em uma das mais conceituadas instituições federais do estado.",
+      detail: "Formação acadêmica no curso de Odontologia da UFMS em Campo Grande/MS.",
     },
     {
-      icon: Award,
-      title: "Especialização em Implantodontia e Prótese",
-      institution: "Pós-graduação Lato Sensu & Treinamento Cirúrgico",
-      detail: "Foco aprofundado na restauração oclusal, prótese cerâmica e reabilitações sobre implantes.",
+      icon: CheckCircle,
+      title: "Foco Clínico em Reabilitação",
+      institution: "Implantes & Prótese Dentária",
+      detail: "Atuação direcionada para reposição dentária, próteses e recuperação estética e funcional.",
     },
     {
       icon: Heart,
-      title: "Compromisso Social e Humanitário",
-      institution: "Atendimentos Comunitários",
-      detail: "Histórico de envolvimento em ações voluntárias de saúde bucal e atendimento humanizado.",
+      title: "Atendimento Individualizado",
+      institution: "Consultório no Carandá Bosque",
+      detail: "Consultas dedicadas com hora marcada, garantindo acompanhamento próximo em cada etapa.",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function About() {
               <div className="relative aspect-[4/5] w-full rounded-outer overflow-hidden shadow-elevated bg-sand-200 img-editorial">
                 <Image
                   src={assetPath("/images/dra-cindy-honda-sobre.jpg")}
-                  alt="Dra. Cindy Tiemi Honda em postura profissional no consultório"
+                  alt="Dra. Cindy Tiemi Honda no consultório odontológico"
                   fill
                   loading="eager"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 500px"
@@ -69,18 +69,18 @@ export default function About() {
           <div className="lg:col-span-7 order-1 lg:order-2">
             
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-espresso-900 leading-tight">
-              Acolhimento autêntico, formação de referência e respeito a cada paciente.
+              Cuidado individualizado e dedicação à saúde bucal.
             </h2>
 
             <div className="mt-6 space-y-4 text-base sm:text-lg text-espresso-700 leading-relaxed font-normal">
               <p>
-                Acredito que o consultório odontológico deve ser um lugar de tranquilidade, clareza e escuta. A perda dentária ou a insatisfação com o próprio sorriso geram impactos reais na autoestima e na mastigação; por isso, cada planejamento deve ser conduzido com empatia e absoluto rigor técnico.
+                O consultório foi planejado para oferecer uma experiência tranquila e acolhedora, com escuta atenta às suas necessidades e tempo dedicado a cada etapa do atendimento.
               </p>
               <p>
-                Graduada pela <strong>Universidade Federal de Mato Grosso do Sul (UFMS)</strong> e com especialização em <strong>Implantodontia e Prótese Dentária</strong>, concentro minha atuação na reabilitação integral da boca: restabelecendo dentes perdidos, devolvendo estabilidade mastigatória e esculpindo sorrisos equilibrados com materiais cerâmicos de alta biocompatibilidade.
+                Graduada em Odontologia pela <strong>Universidade Federal de Mato Grosso do Sul (UFMS)</strong> e inscrita no <strong>{CLINIC_INFO.cro}</strong>, a Dra. Cindy Honda concentra sua prática clínica na reabilitação oral, em procedimentos de implantes dentários, próteses e cuidados preventivos.
               </p>
-              <p className="text-sm sm:text-base text-espresso-600 italic border-l-2 border-bronze-500 pl-4 py-1">
-                “Meu compromisso no consultório é simples: proporcionar um atendimento em que você se sinta seguro, compreendido e acolhido do início ao fim do tratamento.”
+              <p className="text-sm sm:text-base text-espresso-600 border-l-2 border-bronze-500 pl-4 py-1">
+                Cada plano de tratamento é estruturado a partir de uma avaliação clínica minuciosa, buscando restaurar a função mastigatória, a saúde dos tecidos e o bem-estar ao sorrir.
               </p>
             </div>
 

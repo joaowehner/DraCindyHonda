@@ -23,7 +23,7 @@ export default function LocationSection() {
             Localização e facilidade de acesso.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-espresso-600 leading-relaxed font-normal">
-            Situado no coração do Carandá Bosque, em uma das regiões mais nobres e agradáveis de Campo Grande.
+            Consultório localizado no bairro Carandá Bosque, em Campo Grande/MS.
           </p>
         </div>
 
@@ -53,18 +53,14 @@ export default function LocationSection() {
                 </p>
               </div>
 
-              <div className="mt-6 pt-6 border-t border-sand-200/80 space-y-3 text-xs sm:text-sm text-espresso-600">
+              <div className="mt-6 pt-6 border-t border-sand-200/80 space-y-2.5 text-xs sm:text-sm text-espresso-600">
                 <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                  <span>Estacionamento facilitado em frente ao imóvel</span>
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                  <span>Atendimento com hora marcada</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-bronze-500" />
-                  <span>Ambiente climatizado e acessível</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-sand-400" />
-                  <span>Região tranquila e segura</span>
+                  <span className="w-2 h-2 rounded-full bg-bronze-500 shrink-0" />
+                  <span>Segunda a sexta-feira</span>
                 </div>
               </div>
             </div>

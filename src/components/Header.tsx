@@ -31,8 +31,8 @@ export default function Header() {
 
   const navLinks = [
     { name: "Início", href: "#inicio" },
-    { name: "Especialidades", href: "#especialidades" },
-    { name: "Sobre a Dra. Cindy", href: "#sobre" },
+    { name: "Atendimentos", href: "#atendimentos" },
+    { name: "Sobre", href: "#sobre" },
     { name: "Consultório", href: "#consultorio" },
     { name: "Dúvidas", href: "#faq" },
     { name: "Localização", href: "#localizacao" },

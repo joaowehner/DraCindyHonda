@@ -11,32 +11,22 @@ export default function FAQ() {
     {
       question: "Como funciona a primeira consulta de avaliação?",
       answer:
-        "A primeira consulta é uma conversa clínica dedicada e detalhada. Avaliamos a saúde geral da sua boca, tecidos gengivais, estrutura óssea e dentes remanescentes. Se necessário, solicitamos exames de imagem complementares (como radiografias panorâmicas ou tomografias computadorizadas) para planejar com máxima segurança cada etapa do seu tratamento.",
+        "A primeira consulta é dedicada a entender suas queixas e avaliar a saúde bucal de forma completa. A Dra. Cindy realiza o exame clínico, analisa as necessidades funcionais e estéticas e, se necessário, solicita exames complementares para estruturar um plano de tratamento claro e personalizado.",
     },
     {
-      question: "Como é realizado o planejamento para colocação de implantes dentários?",
+      question: "Quais atendimentos são realizados no consultório?",
       answer:
-        "O tratamento com implantes é planejado caso a caso. Analisamos a quantidade e qualidade óssea para a fixação do pino de titânio (a raiz artificial). Todo o procedimento é conduzido sob anestesia local confortável, com técnicas modernas que buscam menor invasividade e recuperação pós-operatória suave. Após a osseointegração, confeccionamos e instalamos a prótese definitiva sobre o implante.",
+        "O consultório atua com foco em reabilitação oral, implantes dentários, próteses e restaurações, além de atendimentos de clínica geral, clareamento dental e cuidados preventivos. Cada procedimento é indicado após criteriosa avaliação clínica individual.",
     },
     {
-      question: "Qual a diferença entre coroas em cerâmica pura e próteses convencionais?",
+      question: "Onde fica localizado o consultório?",
       answer:
-        "As cerâmicas modernas (como dissilicato de lítio e zircônia translúcida) não utilizam metal na estrutura interna. Isso elimina aquela linha escura na gengiva comum em próteses antigas e permite que a luz atravesse o dente da mesma forma que no dente natural, resultando em harmonia estética, estabilidade de cor e alta resistência biológica.",
+        "O consultório está localizado na Rua Vitório Zeola, 1516, Sala 02, no bairro Carandá Bosque, em Campo Grande/MS. O acesso é prático e o local oferece tranquilidade para seu atendimento com hora marcada.",
     },
     {
-      question: "O consultório atende por convênio ou somente particular?",
+      question: "Como funciona o agendamento de horários?",
       answer:
-        "Nosso atendimento é exclusivamente particular. Essa escolha permite dedicar o tempo necessário a cada consulta, utilizar materiais de alto padrão e personalizar o plano de tratamento sem as restrições impostas por operadoras. Quando o plano de saúde do paciente oferece modalidade de livre escolha, fornecemos a documentação e recibo necessários para a solicitação de reembolso.",
-    },
-    {
-      question: "Como é a pontualidade e como funciona o agendamento de horários?",
-      answer:
-        "A pontualidade é um valor inegociável em nosso consultório. Reservamos a sala e o tempo exclusivamente para você no horário marcado. O agendamento é realizado de forma ágil e conveniente pelo WhatsApp da clínica, onde nossa equipe encontra o melhor horário para sua rotina.",
-    },
-    {
-      question: "Onde fica localizado o consultório e como estacionar?",
-      answer:
-        "O consultório está situado na Rua Vitório Zeola, 1516, Sala 02, no Carandá Bosque em Campo Grande/MS. A região é nobre, arborizada e tranquila, com facilidade para estacionar diretamente em frente ao imóvel com total comodidade e segurança.",
+        "Os agendamentos são realizados diretamente pelo WhatsApp. Basta enviar uma mensagem para consultar os horários disponíveis e programar sua consulta com tranquilidade e atenção individualizada.",
     },
   ];
 
@@ -45,7 +35,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 lg:py-28 bg-alabaster border-t border-sand-200/60">
+    <section id="faq" className="py-20 lg:py-28 bg-sand-50 border-t border-sand-200/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -54,7 +44,7 @@ export default function FAQ() {
             Perguntas frequentes
           </h2>
           <p className="mt-4 text-base sm:text-lg text-espresso-600 font-normal">
-            Esclarecimentos sobre atendimentos, procedimentos de reabilitação e funcionamento do consultório.
+            Esclarecimentos sobre os atendimentos e o funcionamento do consultório.
           </p>
         </div>
 
@@ -65,7 +55,7 @@ export default function FAQ() {
             return (
               <div
                 key={idx}
-                className="rounded-outer border border-sand-200/80 bg-sand-50/60 overflow-hidden transition-colors duration-150"
+                className="rounded-outer border border-sand-200/80 bg-alabaster overflow-hidden transition-colors duration-150"
               >
                 <button
                   type="button"

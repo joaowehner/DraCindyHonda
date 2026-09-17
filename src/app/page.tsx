@@ -5,7 +5,6 @@ import Philosophy from "@/components/Philosophy";
 import Treatments from "@/components/Treatments";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import LocationSection from "@/components/LocationSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -22,7 +21,6 @@ export default function Home() {
         <Treatments />
         <About />
         <Experience />
-        <SocialProof />
         <FAQ />
         <LocationSection />
         <FinalCTA />

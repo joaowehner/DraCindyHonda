@@ -37,7 +37,7 @@ export default function FinalCTA() {
                 className="inline-flex items-center justify-center gap-2.5 bg-bronze-500 hover:bg-bronze-400 text-espresso-950 font-semibold text-base px-8 py-4 rounded-full shadow-soft hover:shadow-elevated active:scale-[0.96] transition-all"
               >
                 <MessageCircle className="w-5 h-5 text-espresso-950" strokeWidth={2.2} />
-                <span>Agendar Avaliação no WhatsApp</span>
+                <span>Agendar pelo WhatsApp</span>
               </a>
 
               <a
